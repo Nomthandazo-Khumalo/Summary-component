@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,400;0,600;1,200&display=swap"
+        rel="stylesheet">
+
+    <title>Frontend Mentor | Results summary component</title>
+    <style>
+        body {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #rcorner1 {
+            border-radius: 25px;
+            background: #573df8;
+            padding: 20px;
+            width: 400px;
+            height: 450px;
+            justify-content: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 56px;
+            left: 50px;
+        }
+
+        #rcorner2 {
+            border-radius: 25px;
+            background: url(paper.gif);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            align-items: center;
+        }
+
+        .Circle1 {
+            height: 200px;
+            width: 200px;
+            background-color: #5f4dec;
+            border-radius: 50%;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 120px;
+            left: 105px;
+        }
+
+        #rcorner3 {
+            border-radius: 25px;
+            background: #edeff5;
+            padding: 20px;
+            width: 400px;
+            height: 450px;
+            position: relative;
+            left: -240px;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 56px;
+            left: 490px;
+        }
+
+        #rcorner4 {
+            border-radius: 25px;
+            background: url(paper.gif);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            display: flex;
+        }
+
+        .colortext1 {
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        .colortext2 {
+            color: antiquewhite;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 350px;
+            left: 180px;
+        }
+
+        .colortext3 {
+            color: rgb(253, 251, 247);
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 418px;
+            left: 175px;
+        }
+
+        .colortext4 {
+            color: #ffb0b3;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: -338px;
+            left: -125px;
+        }
+
+        .colortext5 {
+            color: #ffb0b3;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 3px;
+            left: 175px;
+        }
+
+        .colortext6 {
+            color: #deb647;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 55px;
+            left: -167px;
+        }
+
+        .colortext7 {
+            color: #deb647;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 3px;
+            left: 175px;
+        }
+
+        .colortext8 {
+            color: #0aa580;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 60px;
+            left: -175px;
+        }
+
+        .colortext9 {
+            color: #0aa580;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 3px;
+            left: 175px;
+        }
+
+        .colortext10 {
+            color: #11207b;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 60px;
+            left: -175px;
+        }
+
+        .colortext11 {
+            color: #11207b;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 3px;
+            left: 175px;
+        }
+
+        .colortext12 {
+            color: #f2eff5;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: -200px;
+            left: -5px;
+            font-family: Hanken Grotesk, sans-serif;
+            font-size: large;
+        }
+
+        .colortext13 {
+            color: #f2eff5;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 50px;
+            left: -15px;
+        }
+
+        .colortext14 {
+            color: #f2eff5;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: -1px;
+            left: 40px;
+        }
+
+        .colortext15 {
+            color: #f2eff5;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: -1px;
+            left: 30px;
+        }
+
+        .colortext16 {
+            color: #0a0a0a;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 600px;
+            left: 30px;
+        }
+
+        .Button1 {
+            width: 250px;
+            color: transparent;
+            height: 40px;
+            border-radius: 25px;
+            background-color: #303b59;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 430px;
+            left: 90px;
+        }
+
+        .box {
+            background-color: rgba(206, 206, 221, 0.644);
+            width: 1000px;
+            height: 700px;
+            margin: 0px;
+            align-content: center;
+            position: absolute;
+            align-items: center;
+            top: 200px;
+            left: 200px;
+            padding: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+
+        @media screen and (max-width:320px) {
+
+            /* For mobile phones: */
+            body {
+                width: 100vw;
+            }
+
+            #rcorner1,
+            #rcorner3,
+            #rcorner3 {
+            width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div style="overflow:auto">
+    <div class="box">
+        <div id="rcorner1">
+            <div class="Circle1"></div>
+            <span class="colortext1">
+                <h1>Your Result</h1>
+                <span class="colortext2">
+                    <h1>Great</h1>
+                    <span class="colortext12">
+                        <h1>76</h1>
+                        <span class="colortext13">
+                            <h3>Out</h3>
+                            <span class="colortext14">
+                                <h3>of</h3>
+                                <span class="colortext15">
+                                    <h3>100</h3>
+        </div>
+        <p id="rcorner2"></p>
+        <div id="rcorner3">
+            <p>
+            <h2>Summary</h2>
+            </p>
+            <p></svg>
+            <div style="padding: 10px;  width: 300px; 2px solid rgb(236, 188, 224); background: #f7cdff;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"></path>/>Reaction 80/100</div>
+            </p>
+            <p></svg>
+            <div style="padding: 10px;  width: 300px; 2px solid rgb(236, 188, 224); background: #CCFB5D;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858" />
+                    <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858" />
+                    <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0" />
+                </svg></div>
+            </p>
+            <p></svg>
+            <div style="padding: 10px;  width: 300px; 2px solid rgb(236, 188, 224); background: #22CE83;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z" />
+                </svg></div>
+            </p>
+            <p></svg>
+            <div style="padding: 10px;  width: 300px; 2px solid rgb(236, 188, 224); background: #2B65EC;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z" />
+                    <path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                        d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z" />
+                </svg></div>
+            </p>
+            <button class="Button1"></button>
+            <span class="colortext3">
+                <h2>Continue</h2>
+                <span class="colortext4">
+                    <h3>Reaction</h3>
+                    <span class="colortext5">
+                        <h3>80/100</h3>
+                        <span class="colortext6">
+                            <h3>Memory</h3>
+                            <span class="colortext7">
+                                <h3>92/100</h3>
+                                <span class="colortext8">
+                                    <h3>Verbal</h3>
+                                    <span class="colortext9">
+                                        <h3>61/100</h3>
+                                        <span class="colortext10">
+                                            <h3>Visual</h3>
+                                            <span class="colortext11">
+                                                <h3>72/100</h3>
+        </div>
+        <div id="rcorner4"></div>
+        <span class="colortext16">
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="#">Nomthandazo Khumalo</a>.
+            </div>
+    </div>
+</body>
+
+</html>
